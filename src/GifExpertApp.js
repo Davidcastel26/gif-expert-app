@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
+import AddCategory from './components/AddCategory'
 
 const GifExpertApp = () => {
 
@@ -8,18 +9,17 @@ const GifExpertApp = () => {
     // const categories = ['One Punche Man','Naruto','Arcane']
     const [categories, setCategories] = useState(['One Punche Man','Naruto','Arcane'])
 
-    const handleAdd = () => {
-        let newItem = `Game Of Thrones`;
+    // const handleAdd = () => {
+    //     let newItem = `Game Of Thrones`;
         
-        setCategories([...categories, newItem])
-    }
+    //     setCategories([...categories, newItem])
+    // }
 
     return (
         <>
             <h2>Gif Expert App</h2>
+            <AddCategory />
             <hr />
-
-            <button onClick={handleAdd}>Add</button>
 
             <ol>
                 { 
