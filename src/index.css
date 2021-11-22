@@ -30,3 +30,9 @@ input {
 .card img {
   max-height: 170px;
 }
+
+.card-grid {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

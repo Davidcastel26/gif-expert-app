@@ -30,21 +30,19 @@ const GifGrid = ({category}) => {
     }
 
     return (
-        <div className='card-grid'>
+        <>
             <h3> {category} </h3>
-
-            {
-                images.map( img =>(
-                    <GifGridItem 
+            <div className='card-grid'>
+                {
+                    images.map( img =>(
+                        <GifGridItem 
                         key={ img.id}
                         {...img}
-                    /> 
-                ))
-            }
-
-            {/* <h3> { count } </h3> */}
-            {/* <button onClick={ () => setCount( count + 1)}></button> */}
-        </div>
+                        /> 
+                    ))
+                }
+            </div>
+        </>
     )
 }
 
@@ -55,3 +53,6 @@ export default GifGrid;
 // images.map( ({id, title}) =>(
     // <li key={ id}> { title} </li>
 // ))
+
+// {/* <h3> { count } </h3> */}
+// {/* <button onClick={ () => setCount( count + 1)}></button> */}
