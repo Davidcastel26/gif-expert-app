@@ -30,7 +30,7 @@ const GifGrid = ({category}) => {
     }
 
     return (
-        <>
+        <div className='card-grid'>
             <h3> {category} </h3>
 
             {
@@ -44,7 +44,7 @@ const GifGrid = ({category}) => {
 
             {/* <h3> { count } </h3> */}
             {/* <button onClick={ () => setCount( count + 1)}></button> */}
-        </>
+        </div>
     )
 }
 
