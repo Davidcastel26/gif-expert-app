@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test about Gif Grid Item component should show the component in the right way 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="a title"
+    src="https://localhost/algo.jpg"
+  />
+  <p>
+     
+    a title
+     
+  </p>
+</div>
+`;
