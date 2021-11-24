@@ -33,5 +33,18 @@ describe('Test about Gif Grid Item component', ()=>{
         expect( img.prop('alt')).toBe(title);
     })
     
+    test('should have animate_fadeIn', () => {
+        
+        const div = wrapper.find('div');
+        // console.log(div.prop('className')); card animate__animated animate__fadeIn
+        //animate__fadeIn
+        const className = div.prop('className');
+
+        expect( className.includes('animate__fadeIn') ).toBe(true)
+        expect( className.includes('animate__fadeIn') ).not.toBe(false)
+
+
+    })
+    
 
 })
