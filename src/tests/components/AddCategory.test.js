@@ -40,4 +40,8 @@ describe('testing the component add category', () => {
 
     })
 
+    test('should call the set categories and clean the text box area', () => {
+        
+    })
+
 })

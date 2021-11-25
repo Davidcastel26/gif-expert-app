@@ -17,7 +17,7 @@ export const AddCategory = ({ setCategories }) => {
         // console.log('sub done');
         // we are calling categories
 
-        console.log('hangleSumit', inputValue);
+        console.log('hangleSumit', inputValue); //hangleSumit Hello world
 
         if( inputValue.trim().length > 2){
             setCategories( categs => [ inputValue, ...categs ] )
