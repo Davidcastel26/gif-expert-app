@@ -55,7 +55,7 @@ describe('testing the component add category', () => {
         expect( setCategories ).toHaveBeenCalledTimes(1);
         //if we would like to check if its a function
         // expect( setCategories ).toHaveBeenCalledWith( expect.any(Function));
-        
+         
         //thie input should be empty
         expect( wrapper.find('input').prop('value') ).toBe('')
 
