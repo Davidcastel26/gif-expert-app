@@ -10,6 +10,8 @@ describe('testing the primary react component', () => {
 
     const wrapper = shallow( <GifExpertApp /> )
 
-    
+    test('should show the right path', () => {
+        expect(wrapper).toMatchSnapshot()
+    })
 
 })
