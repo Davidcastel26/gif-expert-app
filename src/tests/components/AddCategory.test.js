@@ -7,7 +7,7 @@ describe('testing the component add category', () => {
 
     const setCategories = jest.fn();
                         //jest.fn will be our arrow function
-    const wrapper = shallow( <AddCategory setCategories={setCategories} />)
+    let wrapper = shallow( <AddCategory setCategories={setCategories} />)
 
     beforeEach( () => {
         // this is something that we use in order to spot anythin that we could run before 
@@ -40,8 +40,25 @@ describe('testing the component add category', () => {
 
     })
 
-    test('should call the set categories and clean the text box area', () => {
+    test('should call the set categories and clean the text box area', () => {   
         
+        const value = 'Hello world';
+        
+        //simulate the imput change
+        wrapper.find('input').simulate('change', {target: { value }});
+
+        //simulate the submit
+        wrapper.find('form').simulate('submit', { preventDefault(){} })
+
+        //set categories must be called
+        expect( setCategories ).toHaveBeenCalled();
+        expect( setCategories ).toHaveBeenCalledTimes(1);
+        //if we would like to check if its a function
+        // expect( setCategories ).toHaveBeenCalledWith( expect.any(Function));
+        
+        //thie input should be empty
+        expect( wrapper.find('input').prop('value') ).toBe('')
+
     })
 
 })

@@ -9,7 +9,7 @@ export const AddCategory = ({ setCategories }) => {
         // console.log(e.target.value);
         setinputValue(e.target.value)
 
-        console.log('handleinputchange called');
+        // console.log('handleinputchange called');
     }
 
     const handleSubmit = (e) => {
