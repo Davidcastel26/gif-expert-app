@@ -3,12 +3,12 @@ import React, {useState} from 'react'
 import AddCategory from './components/AddCategory'
 import GifGrid from './components/GifGrid'
 
-const GifExpertApp = () => {
+const GifExpertApp = ({ defaultCategories = []}) => {
 
     // const pikey = 'AYhFpbImnSFFHIwxeoq82SNAeF5iDQXX'
 
     // const categories = ['One Punche Man','Naruto','Arcane']
-    const [categories, setCategories] = useState(['Arcane'])
+    const [categories, setCategories] = useState( defaultCategories )
     // let newItem = `Game Of Thrones`;
     // const handleAdd = () => {
     //     setCategories([...categories, newItem])

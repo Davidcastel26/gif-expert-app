@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`testing the primary react component should show the right path 1`] = `
+exports[`testing the primary react component should show a list of categories 1`] = `
 <Fragment>
   <h2>
     Gif Expert App
@@ -15,5 +15,18 @@ exports[`testing the primary react component should show the right path 1`] = `
       key="Arcane"
     />
   </ol>
+</Fragment>
+`;
+
+exports[`testing the primary react component should show the right path 1`] = `
+<Fragment>
+  <h2>
+    Gif Expert App
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol />
 </Fragment>
 `;

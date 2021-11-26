@@ -14,4 +14,14 @@ describe('testing the primary react component', () => {
         expect(wrapper).toMatchSnapshot()
     })
 
+    test('should show a list of categories', () => {
+
+        const categoriesH = ['Arcane'];
+        const wrapper = shallow( <GifExpertApp defaultCategories={categoriesH}/> );
+
+        expect( wrapper ).toMatchSnapshot();
+        expect( wrapper.find('GifGrid').length ).toBe( categoriesH.length )
+
+    })
+
 })
